@@ -48,14 +48,6 @@ npm install
 # Inicie o servidor
 npm run dev
 
-# volte a raiz do projeto
-cd ../
-
-# Entre no diretório do frontend
-cd devgram/frontend
-
-# Inicie o app
-npm start
 
 ```
 

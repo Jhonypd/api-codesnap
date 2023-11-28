@@ -22,7 +22,7 @@
         { "key": "Access-Control-Allow-credentials", "value": "true" },
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "http://localhost:3000"
+          "value": "https://codesnapio.vercel.app"
         },
         {
           "key": "Access-Control-Allow-methods",
