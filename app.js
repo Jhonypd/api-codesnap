@@ -18,7 +18,7 @@ app.use(
 
 //solve cors
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://apicode.vercel.app/",
   optionsSuccessStatus: 200,
 };
 
