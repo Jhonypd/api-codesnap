@@ -9,7 +9,7 @@
       }
     }
   ],
-  "routes": "routes.json",
+  "routes": ["routes.json"],
   "headers": [
     {
       "source": "/api/(.*)",
