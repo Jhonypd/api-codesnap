@@ -22,6 +22,7 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
+//solve cors
 app.use(cors(corsOptions));
 
 //upload directory
