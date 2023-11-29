@@ -20,6 +20,7 @@ app.use(
 const corsOptions = {
   origin: "https://codesnapio.vercel.app",
   optionsSuccessStatus: 200,
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 };
 
 //solve cors
