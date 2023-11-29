@@ -18,25 +18,5 @@
       "src": "/(.*)",
       "dest": "./routes/Router.js"
     }
-  ],
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-credentials", "value": "true" },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "https://codesnapio.vercel.app"
-        },
-        {
-          "key": "Access-Control-Allow-methods",
-          "value": "GET, OPTIONS, PATCH, DELETE, POST, PUT"
-        },
-        {
-          "key": "Access-Control-Allow-headers",
-          "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
-        }
-      ]
-    }
   ]
 }
