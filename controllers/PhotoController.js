@@ -133,13 +133,12 @@ const getUserPhotos = async (req, res) => {
 
   const upadtedPhotos = [];
 
-  let userImageAvatar = user.profileImage !== "";
-
   for (const photo of photos) {
-    if (!photo.photoUser && !userImageAvatar) {
+    if (!photo.photoUser || photo.photoUser !== user.profileImage) {
       photo.photoUser = user.profileImage;
       await photo.save();
     }
+
     upadtedPhotos.push(photo.toObject());
   }
 

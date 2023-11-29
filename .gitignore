@@ -1,4 +1,5 @@
 .vercel
 .env
-
+uploads/photos/**
+uploads/users/**
 node_modules
