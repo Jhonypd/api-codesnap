@@ -18,7 +18,7 @@ app.use(
 
 //solve cors
 const corsOptions = {
-  origin: "https://apicode.vercel.app/",
+  origin: "https://codesnapio.vercel.app",
   optionsSuccessStatus: 200,
 };
 
