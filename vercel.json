@@ -9,7 +9,16 @@
       }
     }
   ],
-  "routes": "routes.json",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "./routes/Router.js"
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
