@@ -18,13 +18,18 @@ app.use(
 
 //solve cors
 const corsOptions = {
-  origin: "https://codesnapio.vercel.app",
+  origin: ["http://localhost:3000", "https://codesnapio.vercel.app"],
   optionsSuccessStatus: 200,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 };
 
+app.use((req, res, next) => {
+  console.log("Midlleware CORS em execução");
+  cors(corsOptions)(req, res, next);
+});
+
 //solve cors
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 //upload directory
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
