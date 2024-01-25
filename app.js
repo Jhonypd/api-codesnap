@@ -18,7 +18,7 @@ app.use(
 
 //solve cors
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://codesnapio.vercel.app"],
+  origin: [ "https://codesnapio.vercel.app"],
   optionsSuccessStatus: 200,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 };
