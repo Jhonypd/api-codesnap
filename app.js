@@ -17,14 +17,7 @@ app.use(
 );
 
 //solve cors
-const corsOptions = {
-  origin: [ "https://codesnapio.vercel.app"],
-  optionsSuccessStatus: 200,
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-};
-
-//solve cors
-app.use(cors(corsOptions));
+app.use(cors({ credentials: true, origin: "https://codesnapio.vercel.app" }));
 
 //upload directory
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
